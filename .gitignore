@@ -1,0 +1,4 @@
+.idea/
+log/*.csv
+count.dat
+css_counter.lock
