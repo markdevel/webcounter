@@ -81,9 +81,9 @@ class HTMLCounter(BaseWebCounter):
             'K/DhKDtqQyufNrppOWt8SH1g67/3Our5/Kh8efPTkwVvHTp05hQxdnasgsJ27Sg1LJbQ38ZevaTtO'
             'qokrOE7btY7bKPUqaSmcDmBVwDAhtmyJlJhCmsChwbIGzZQeKbiYFeMezE5DfQYVuUuY0qVMmzYoA'
             'AA7')
-        self.image_width = os.getenv('IMAGE_WIDTH', 150)
-        self.image_height = os.getenv('IMAGE_HEIGHT', 20)
-        self.min_digits = os.getenv('MIN_DIGITS', 1)
+        self.image_width = int(os.getenv('IMAGE_WIDTH', 150))
+        self.image_height = int(os.getenv('IMAGE_HEIGHT', 20))
+        self.min_digits = int(os.getenv('MIN_DIGITS', 1))
 
     def render(self, count):
         n = 10
