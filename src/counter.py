@@ -92,7 +92,7 @@ class HTMLCounter(BaseWebCounter):
                 self.image_url, self.image_width / n, self.image_height, -i * self.image_width / n) for i in range(n)]
         s = "".join(["<div style=\"{0}\"></div>".format(sprites[int(c)]) for c in str(count).zfill(self.min_digits)])
         s = '<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, ' \
-            'initial-scale=1"></head><body>' + s + '</body></html> '
+            'initial-scale=1"></head><body style="margin:0">' + s + '</body></html> '
         return response.html(s)
 
 
